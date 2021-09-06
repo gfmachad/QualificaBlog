@@ -1,0 +1,17 @@
+
+.equipe{
+  display: flex;
+  justify-content: center;
+  
+}
+.membros{
+  border: solid 1px black;
+  align-items: center;
+  width:45%;
+  /* align-content: flex-end; */
+  
+}
+img {
+  width: 250px;
+  height: 250px;
+}

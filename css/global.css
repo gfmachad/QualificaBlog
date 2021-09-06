@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+iframe {
+  height: 40px;
+  width: 100%;
+  background-color:rgb(13,1,43);
+}
+
+footer{
+  width: 100%;
+  margin: 0;
+  padding-top: 8px;
+}

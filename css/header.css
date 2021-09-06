@@ -1,0 +1,11 @@
+*{
+  color: white;
+  text-decoration: none;
+}
+p, span, a, svg{
+  margin-right: 8px;
+}
+body{
+  display: flex;
+  align-items: center;
+}
