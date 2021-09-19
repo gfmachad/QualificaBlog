@@ -16,8 +16,16 @@
   text-decoration: none;
 }
 
-
 /* Main */
+
+/* container-contato */
+.container{
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /* titulo */
 #contact--title{
   margin: 15px;
@@ -29,6 +37,16 @@
   font-size: 20px;
   margin-left: 20px;
 }
+
+/* centralizar contato */
+.contact-form{
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+
 fieldset{
   margin: 15px;
   border-radius: 4px;
@@ -40,6 +58,7 @@ fieldset{
   width: 80%;
   font-weight: bold;
   font-size: 15px;
+  
 }
 /* Inputs e textarea */
 input, textarea{
