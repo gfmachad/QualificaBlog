@@ -1,18 +1,32 @@
+/* Preferências globais */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  color: #dbd9d9;
+  border-color: #dbd9d9;
 }
 
-iframe {
-  height: 40px;
-  width: 100%;
-  background-color:rgb(13,1,43);
+/* Caminho da página */
+#global--path{
+  margin: 15px 30px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
+/* Papel de parede global */
+body{
+  /* background-color: #111; */
+  background-color: #0D1418;
+  
+}
+
+/* Posição do footer na pagina */
 footer{
   width: 100%;
   margin: 0;
   padding-top: 8px;
+  position: absolute;
+  bottom: 0px;
 }

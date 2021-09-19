@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,48 +9,80 @@
   <title>Blog</title>
 </head>
 <body>
-  <header>
-    <iframe src="../components/Header/index.html" frameborder="0" scrolling="no"></iframe>
+  <header class="header">
+    <svg height="30" width="30">
+      <circle cx="15" cy="15" r="15" stroke="white" stroke-width="1" fill="#4c43a1" />
+    </svg>
+    <div class='links' >
+      <span>Qualifica Blog</span>
+      <a class='link'  href="../../index.html" target="_self">Home</a>
+      <a class='link' href="./Blog.html" target="_self">Blog</a>
+      <a class='link' href="./Equipe.html" target="_self">Equipe</a>
+      <a class='link' href="./Contato.html" target="_self">Contato</a>
+    </div>
   </header>
 
   <main>
-    <p>Qualifica Blog | Blog </p>
+    <p id="global--path">Qualifica Blog | Blog </p>
 
-    <section>
-      <h2>A história do CSS</h2>
-      <p>
+    <section class="blog--post">
+      <h2 class="blog--title">A história do CSS</h2>
+      <img class="blog--img" src="../img/capa-blog/000.jpeg" alt="capa"/>
+      <p class="blog--coment">
           No inicio, o HTML era a única linguagem utilizada para criar sites. Quando começou a ganhar popularidade, algumas tags (comandos) foram criadas pelos navegadores para facilitar o uso da linguagem; Para facilitar ainda mais a criação destes layouts, a W3C (World Wide Web Consortium) criou o CSS, colocando a disposição dos Webdesigners. O CSS é uma linguagem que determina a aparência (layout) de paginas para a Web. Este programa permite ao usuário criar paginas da Web com códigos mais fáceis de elaborar que os códigos HTML. Estes códigos permitem fazer as aplicações com facilidade. Este programa é utilizado pelos programadores em todo o mundo. O CSS controla as opções de margem, linhas, cores, alturas, larguras, imagens e posicionamento, sem necessidade de programar em HTML.  O CSS tem também alguns códigos prontos, permitindo aos usuários pouparem tempo criando códigos muito comuns.
       </p>
       <div>
-        <img src="../img/capa-blog/000.jpeg" alt="capa"/>
-        <p><a href="https://www.infoescola.com/informatica/cascading-style-sheets-css/">Referência</a></p>
+        <p class="blog--refs">[<a class="blog--refs--a" href="https://www.infoescola.com/informatica/cascading-style-sheets-css/">Referência</a><span>06/09/2021</span>]</p>
       </div>
-      <p>06/09/2021</p>
+      
     </section>
 
-    <section>
-        <h2>A história do HTML</h2>
-        <p>
+    <section class="blog--post"> 
+        <h2 class="blog--title">A história do HTML</h2>
+        <img class="blog--img" src="../img/capa-blog/001.jpeg" alt="capa"/>
+        <p class="blog--coment">
             Em 1980, o Físico Britânico Tim Berners-Lee, iniciou um projeto baseado na Marcação de HiperTexto, denominado ENQUIRE. Este projeto foi realizado inicialmente através da linguagem de programação Pascal. Anos mais tarde, em 1889, Tim Berners-Lee e o estudante Robert Cailliau conseguiram implementar a primeira comunicação entre o usuário e servidor através do protocolo HTTP. Com isso, surgia então a World Wide Web (www), a web que conhecemos hoje. Com o objetivo de facilitar comunicação e disseminação de documentos entre pesquisadores, ele criou então a linguagem de marcação de hipertexto, o HTML. A sua primeira versão foi publicada em 1991 e foi baseada na SGML, uma linguagem de marcação utilizada para a estruturação de documentos. O SGML já possuía diversas tags que foram herdadas pelo HTML. Contudo, a maior diferença entre essas duas linguagens, é que o HTML implementava a tag <a>, permitindo a ligação de uma página a outra, conhecido como link.  A interligação entre documentos é a base do funcionamento de toda Web. A linguagem de marcação de hipertexto ficou bastante conhecida quando começou a ser utilizada para formar a rede pública daquela época. Alguns anos mais tarde, se tornaria a linguagem padrão da internet que conhecemos hoje.
         </p>
-        <img src="../img/capa-blog/001.jpeg" alt="capa"/>
-        <p><a href="https://www.homehost.com.br/blog/tutoriais/o-que-e-html/">Referência</a></p>
-        <p>06/09/2021</p>
+        <p class="blog--refs">[<a class="blog--refs--a" href="https://www.homehost.com.br/blog/tutoriais/o-que-e-html/">Referência</a><span>06/09/2021</span>]</p>
     </section>
 
-    <section>
-        <h2>Historia Js</h2>
-        <p>
+    <section class="blog--post">
+        <h2 class="blog--title">História Js</h2>
+        <img class="blog--img" src="../img/capa-blog/002.jpeg" alt="capa"/>
+        <p class="blog--coment">
             O JavaScript foi criado na década de 90 por Brendan Eich a serviço da Netscape. Essa década foi um período de revolução, pois os browsers ainda eram estáticos. O navegador mais popular dessa época era o Mosaic, da NCSA. NCSA Mosaic. O navegador mais popular da década de 90. NCSA Mosaic. O navegador mais popular da década de 90. A Netscape foi fundada em 1994 para explorar a Web que estava surgindo. Foi então criado o Netscape Navigator. Em pouco tempo, este se tornou o browser dominante nessa década. Muitos desenvolvedores da NCSA foram designados no projeto do Navigator.Netscape Navigator: tirou a coroa do NCSA  Mosaic. Netscape Navigator: tirou a coroa do NCSA Mosaic. A Netscape chegou à conclusão que a web teria que se tornar mais dinâmica, pois o Navigator tinha sempre que fazer uma requisição ao servidor para obter uma resposta no navegador. Em 1995, a Netscape contratou Brendan Eich para criar uma linguagem que proporcionasse isso. A proposta inicial era a implementação da linguagem Scheme, baseada em LISP, puramente funcional, no Navigator. Porém a Netscape tinha projetos anteriores em conjunto com a Sun Microsystems para colocar sua mais recente e promissora linguagem de programação, o Java, no Navigator. Isso elevou uma discussão interna do motivo de ter duas linguagens.Obviamente predominou a escolha de uma única linguagem com a sintaxe baseada em Java. O argumento foi que o Scheme, por ter uma sintaxe e complexidade características de linguagens funcionais, se tornaria impopular (veja o código abaixo). O objetivo da Netscape com a nova linguagem era exatamente o oposto.
             Mesmo com sintaxe “javanesa” e com outras características do Java (valores primitivos e objetos), o JavaScript logo de início sofreu a influência funcional do Scheme, e mais tarde de linguagens como o Self (protótipos), Perl e Python (Strings, arrays e expressões regulares). Para defender o JavaScript contra outras propostas, um protótipo foi criado por Eich em dez dias, em Maio de 1995. Marc Andreesen nomeou o protótipo de Mocha. O nome da linguagem mudou de novo para LiveScript por causa de patentes e porque vários produtos estavam levando o “Live” como sufixo.Brendan Eich: o criador do JavaScript e ex CEO da Mozilla. Brendan Eich: o criador do JavaScript e ex CEO da Mozilla. No final de Novembro de 1995, a versão 2.0B3 do Navigator saiu com a versão “de dez dias” sem muitas alterações. No começo de Dezembro de 1995, o Java estava no seu ápice e a linguagem foi renomeada para JavaScript.
         </p>
-        <img src="../img/capa-blog/002.jpeg" alt="capa"/>
-        <p><a href="http://shipit.resultadosdigitais.com.br/blog/javascript-1-uma-breve-historia-da-linguagem/">Referência</a></p> 
-        <p>06/09/2021</p>
+        <p class="blog--refs">[<a class="blog--refs--a" href="http://shipit.resultadosdigitais.com.br/blog/javascript-1-uma-breve-historia-da-linguagem/">Referência</a> <span>06/09/2021</span>]</p> 
     </section>
   </main>
-  <footer>
-    <iframe style="height: 150px" src="../components/Footer/index.html" scrolling="no" frameborder="0"></iframe>
-  </footer>
+  <footer class='footer'>
+    <div>
+        <span>Gabriel: </span>
+        <a href="https://br.linkedin.com/in/gabriel-botelho-malenowitch-9a0523214"
+        target="_blank">
+            <img src="https://static-exp1.licdn.com/sc/h/95o6rrc5ws6mlw6wqzy0xgj7y" alt="Logo linkedin">
+        </a>
+        <a href="https://github.com/Gabriel-Malenowitch" target="_blank">
+            <svg height="32" class="octicon octicon-mark-github color-text-white" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+        </a>
+        <p>
+          021.84@estudante.sed.sc.gov.br
+        </p>
+    </div>
+    <div>
+        <span>Guilherme: </span>
+        <a href="https://www.linkedin.com/in/guilherme-fritzen-machado-62979b20b/"
+        target="_blank">
+            <img src="https://static-exp1.licdn.com/sc/h/95o6rrc5ws6mlw6wqzy0xgj7y" alt="Logo linkedin">
+        </a>
+        <a href="https://github.com/gfmachad">
+            <svg height="32" class="octicon octicon-mark-github color-text-white" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+        </a>
+        <p>
+          023.08@estudante.sed.sc.gov.br
+        </p>
+    </div>
+</footer>
 </body>
 </html>

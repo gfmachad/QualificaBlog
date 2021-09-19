@@ -1,11 +1,66 @@
-section{
-  border: solid 1px black;
+/* Header */
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height: 50px;
+  background-color:#0c0c17;
+}
+
+.links{
+  margin-right: 10px;
+  color: #dbd9d9;
+}
+.link{
+  text-decoration: none;
+}
+/* Main */
+.blog--post{
+  border: solid 1px;
   border-radius: 5px;
   margin: 1rem;
 }
 
-img{
+.blog--title{
+  margin: 10px;
+} 
+
+/* Imagens do blog */
+.blog--img{
   max-width: 60%;  
   justify-content: center;
   align-self: center;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border: solid 2px;
+  border-radius: 3px;
+}
+/* Comentarios do blog */
+.blog--coment{
+  margin: 10px;
+  width: auto;
+}
+/* referencia a tag links */
+.blog--refs--a{
+  margin-right: 5px;
+  text-decoration: none;
+  font-style: italic;
+}
+/* referencia a div link e ano */
+.blog--refs{
+  margin: 10px;
+}
+
+footer{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #dbd9d9;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 10px;
+  background-color:#0c0c17;
+  border-radius: 5px;
 }
