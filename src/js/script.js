@@ -19,7 +19,7 @@ function validaNome() {
 
 //Não aceita email vazio nem sem o @
 function validaEmail() {
-	const regExp = /.{1,30}@(.{1,20}(?!\.)){1,7}/;
+	const regExp = /.{1,30}@([a-z]{1,20}\.){1,5}[a-z]{1,20}$/;
 	email.value == '' || !regExp.test(String(email.value)))
 		? (email.style.borderColor = 'red')
 		: setGreen(email)
